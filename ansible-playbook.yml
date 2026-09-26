@@ -12,11 +12,11 @@
       ignore_errors: yes
 
     - name: remove comingsoon-image
-      command: docker rmi triple3a/comingsoon-page
+      command: docker rmi mohamedhmza123/comingsoon-page
       ignore_errors: yes
 
     - name: build docker image using the Dockerfile
-      command: docker build -t triple3a/comingsoon-page .
+      command: docker build -t mohamedhmza123/comingsoon-page .
 
     - name: Push Image to dockerhub
       command: docker push mohamedhmza123/comingsoon-page
